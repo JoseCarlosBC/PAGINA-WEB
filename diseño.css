@@ -1,0 +1,13 @@
+*
+{
+    margin:20px;
+    padding:2px;
+}
+{
+    background-image: url('Juegos/imagen 1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Comic Sans MS, "Arial";
+    position:relative;
+}
