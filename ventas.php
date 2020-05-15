@@ -16,7 +16,7 @@
         </div>
 
         <div align="right">
-            <a href="index.html">Salir</a>
+            <a href="index.html">Cerrar_Sesion</a>
         </div>
         <hr />
         <br />
