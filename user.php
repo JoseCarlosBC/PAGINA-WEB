@@ -1,16 +1,16 @@
 <?php
-	include('conexion.php');
+	include('ValidarUser.php');
 
-	$con=new Conexion();
+	$validar = new ValidarUsuario;
 
-	$user=$_POST['nombre'];
+	$nombre=$_POST['nombre'];
 	$password=$_POST['pass'];
 
-	$query="SELECT * FROM `usuarios` WHERE user='$user' AND contraseña='$password'";
-	$usuario=$con->query($query);
-	$con->close();
+	$resultado=$validar->ValidarUser($nombre, $password);
 
-	if($resultado->num_rows==1) 
+	var_dump($resultado);
+
+	if($resultado->num_rows == 1) 
 	{
 		header("location:ventas.html");
 	}
